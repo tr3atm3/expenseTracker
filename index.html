@@ -19,47 +19,52 @@
   </head>
   <body>
     <div class="container">
-      <form>
-        <div class="form-floating">
-          <input
-            type="number"
-            name="amount"
-            class="form-control"
-            id="amount"
-            placeholder="Enter expenses here"
-            required
-          />
-          <label for="amount" class="form-label">Expense Amount</label>
-        </div>
-        <div class="form-floating">
-          <input
-            type="text"
-            class="form-control"
-            name="description"
-            id="description"
-            placeholder="description"
-            required
-          />
-          <label for="description" class="form-label">Description</label>
-        </div>
-        <div class="form-floating">
-          <select
-            name="category"
-            id="category"
-            class="form-select"
-            placeholder="category"
-          >
-            <option>rent</option>
-            <option>groceries</option>
-            <option>electricity bill</option>
-            <option>maintanence</option>
-            <option>other expenses</option>
-          </select>
-          <label for="category" class="form-label">Category</label>
-        </div>
+      <div class="row">
+        <form>
+          <div class="form-floating">
+            <input
+              type="number"
+              name="amount"
+              class="form-control"
+              id="amount"
+              placeholder="Enter expenses here"
+              required
+            />
+            <label for="amount" class="form-label">Expense Amount</label>
+          </div>
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              name="description"
+              id="description"
+              placeholder="description"
+              required
+            />
+            <label for="description" class="form-label">Description</label>
+          </div>
+          <div class="form-floating">
+            <select
+              name="category"
+              id="category"
+              class="form-select"
+              placeholder="category"
+            >
+              <option value="rent">rent</option>
+              <option value="groceries">groceries</option>
+              <option value="electricity">electricity</option>
+              <option value="electricity">maintanence</option>
+              <option value="other">other</option>
+            </select>
+            <label for="category" class="form-label">Category</label>
+          </div>
 
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="row">
+        <ul id="ul"></ul>
+      </div>
     </div>
   </body>
   <script src="script.js"></script>
